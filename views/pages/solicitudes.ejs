@@ -1,0 +1,49 @@
+<%- contentFor('body') %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widthdevice-wicth. initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<!--<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+  crossorigin="anonymous">-->
+</head>
+<body>
+  <div class="form-group text-right">
+      <input type="text" id="formulario" class="form-control my-2" placeholder ="Buscar por Nombre del Solicitante" style="width: 50%;height: 1%;">
+      <button class="btn btn-info mb-2" id="boton">Buscar</button>
+    </div>
+  <form action="/veralumno" method="GET"> 
+  <div class="jumbotron text-center">
+  <div class="container mt-5">
+    <h3 class="h2home">Solicitudes</h3><br>
+    
+    <ul id="resultado"></ul>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Carrera</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+        <th>Solicitud</th>
+      </tr>
+      <tbody>
+        <% for (database of data) { %>
+        <tr>
+          <td><%= database.nombres %></td>
+          <td><%= database.paterno %></td>        
+          <td><%= database.carrera %></td>
+          <td><%= database.fecha %></td>
+          <td><%= database.estadoBeca %></td>
+          <td><a href="/ver/<%= database._id %>" class=" btn btn-info mb-2">Ver</a></td>
+        </tr>
+        <% } %>
+      </tbody>
+      </table>
+      <!--<button type="submit" class="btn btn-info mb-2">Ver</button>-->
+  </div>
+</body>
+</html>

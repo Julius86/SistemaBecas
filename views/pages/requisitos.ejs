@@ -1,0 +1,112 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <form action="/requisitos" method="POST"> 
+    <!-- <form action="/venta" method="GET">--> 
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h3 class="h2home">Requisitos </h3> 
+            <h4>Adjuntar los documentos que se solicitan</h4>
+            <br>
+            <div class="form-group">
+                <label>Adjuntar su horario de clases del semestre en curso</label>
+                <input id="horario" type="file" name="horario" class="container-file"><br><br>          
+            </div>
+            <div class="form-group">
+                <label>Promedio general</label>
+                <h6>NOTA: en caso de ser de primer semestre, ingresar el promedio que indique su certificado de nivel inmediato.</h6>
+                <input type="number" name="promedio" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Adjuntar Kárdex académico</label>
+                <h6>NOTA: en caso de ser de primer semestre, adjuntar su certificado de nivel de estudios anterior.</h6>
+                <input type="file" id="kardex" name="kardex" class="container-file"><br><br>
+            </div>
+            <div class="form-group">
+                <label>Copia del comprobante de ingresos del estudiante</label>
+                <h6>En caso de que trabaje y sea independiente del padre, madre y/o tutor.</h6>
+                <h6>(No mayor a 2 meses).</h6>
+                <input type="file" name="comprobanteIngresos" id="comprobanteIngresos" class="container-file"><br><br>
+            </div>
+            <div class="form-group">
+                <label>Carta de trabajo de quien o quienes reiban ingresos mensuales</label>
+                <input type="file" id="cartaTrabajo" name="cartaTrabajo" class="container-file"><br><br><br>
+            </div>
+            <div class="form-group">
+                <label>Copia de INE de quien recibe ingresos</label>
+                <input type="file" id="INE" name="INE" class="container-file"><br><br><br>
+            </div>
+            <div class="form-group">
+                <label>Copia de comprobante de domicilio</label>
+                <h6>(No mayor a 2 meses)</h6>
+                <input type="file" id="comprobanteDomicilio" name="comprobanteDomicilio" class="container-file"><br><br>
+            </div>
+            <div class="form-group">
+                <label>Copia decredencial de la escuela</label>
+                <input type="file" name="credencial" id="credencial" class="container-file"><br><br><br>
+            </div>
+            <div class="form-group">
+                <label>Entregar un escrito decir verdad, firmado por el solicitante donde indique que no cuenta con otas becas.</label>
+                <input type="file" name="DecirVerdad" id="DecirVerdad" class="container-file"><br><br><br>
+            </div>
+            <div class="form-group">
+                <label>¿Es usted estudiante con capacidades diferentes?</label><br>
+                <input type="radio" id="si" name="capacidadesDiferentes" value="si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="capacidadesDiferentes" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class="form-group">
+                <label>¿Usted cuenta con algún tipo de beca? Favor de especificar</label>
+                <input type="text" name="becaEspecial" class="form-control"required>
+            </div>
+            <div>
+                <label>¿Actualmente realiza servicio social, participa en alguna actividad cultural, deportiva, asesoría acadéica?</label><br>
+                <input type="radio" id="si" name="servicio" value="si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="servicio" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <br>
+            <div>
+                <label>¿Usted es madre o padre soltero(a), o se encuentra embarazada?</label><br>
+                <input type="radio" id="si" name="hijo" value="si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="hijo" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Especifique el número de hijos</label>
+                <input type="number" name="noHijos" class="form-control"required>
+            </div>
+                <div class="form-group">
+                <label>Si tiene hijos, adjuntar acta de nacimiento</label>
+                <input type="file" name="actaHijo" id="actaHijo" class="container-file"><br><br><br>
+            </div>
+            <div>
+                <label>¿Usted participa en equipos o grupos representativos de la institución?</label><br>
+                <input type="radio" id="si" name="equipo" value="si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="equipo" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Favor de indicar los motivos por los cuales considera que es necesario se le otorgue la beca alimenticia:</label>
+                <input type="text" name="motivosdeBeca" class="form-control"required>
+            </div>
+            <div>
+                <label>Estoy enterado y de acuerdo con las bases, requisitos y obligaciones que indica la convocatoria de beca alimenticia.</label><br>
+                <input type="radio" id="si" name="acuerdo" value="si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="acuerdo" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <br>
+            <div class="form-group text-right">
+                <button type="submit" class="btnSolicitud">Finalizar</button>  
+            </div> 
+      </div>
+     </div>
+    </form>
+</div>

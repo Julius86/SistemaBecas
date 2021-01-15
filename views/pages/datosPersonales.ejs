@@ -1,0 +1,56 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <!-- <form action="/TCVenta" method="POST"> --> 
+    <form action="/personales" method="POST">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3 class="h2home">Ingrese su información personal</h3>
+          <br>
+          <div class="form-group">
+            <label>Apellido paterno</label>
+            <input type="text" name="aPaterno" class="form-control" style="text-transform:uppercase" required placeholder="Apellido paterno">
+          </div>
+          <div class="form-group">
+          <label>Apellido materno</label>
+            <input type="text" name="aMaterno" class="form-control" style="text-transform:uppercase" required placeholder="Apellido materno">
+          </div>
+          <div class="form-group">
+          <label>Nombre(s)</label>
+            <input type="text" name="nombre" class="form-control" style="text-transform:uppercase" required placeholder="Nombre(s)">
+          </div>
+          <div class="form-group">
+            <label>Edad</label>
+            <input type="number" name="Edad" class="form-control" required placeholder="Edad">
+          </div>
+          <div class="form-group">
+            <label>Estado Civil</label>
+            <select name="edoCivil" id="edoCivil"class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="Soltero">SOLTERO</option>  
+                <option value="Casado">CASADO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Dirección Particular</label>
+            <input type="text" name="Dir" class="form-control" style="text-transform:uppercase" required placeholder="Dirección">
+          </div>
+          <div class="from-group">
+            <label>Teléfono celular</label>
+            <input type="text" name="NoCel" class="form-control" required placeholder="XXX-XX-XX">
+          </div><br>
+          <div class="form-group">
+            <label>¿Alguna vez tuvo beca alimenticia?</label>
+            <select name="AntecedenteBeca" id="AntecedenteBeca"class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="Primera vez">PRIMERA VEZ</option>  
+                <option value="Anteriormente">ANTERIORMENTE</option>
+            </select>
+          </div>
+          <div class="form-group text-right">
+            <button type="submit" class="btnSolicitud">Guardar</button>         
+          </div>
+          
+      </div>
+     </div>
+    </form>
+</div>

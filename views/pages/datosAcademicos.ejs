@@ -1,0 +1,101 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <form action="/academicos" method="POST"> 
+    <!-- <form action="/venta" method="GET">--> 
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3 class="h2home">Ingrese su información académica</h3>
+          <br>
+          <div class="form-group">
+            <label>Número de control</label>
+            <input type="number" name="noControl" class="form-control" required placeholder="Ej.: 19211234">
+          </div>
+          
+          <div class="form-group">
+            <label>Programa educativo que actualmente se encuentra cursando</label>
+            <select name="carrera" id="carrera"class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="Arquitectura">Arquitectura</option>  
+                <option value="Contador Publico">Contador Publico</option>
+                <option value="Ing. Ambiental">Ing. Ambiental</option>
+                <option value="Ing. Biomédica">Ing. Biomédica</option>
+                <option value="Ing. Bioquímica">Ing. Bioquímica</option>
+                <option value="Ing. Civil">Ing. Civil</option>
+                <option value="Ing. Electromecánica">Ing. Electromecánica</option>
+                <option value="Ing. en Aeronáutica">Ing. en Aeronáutica</option>
+                <option value="Ing. en Diseño Industrial">Ing. en Diseño Industrial</option>
+                <option value="Ing. en Gestión Empresarial">Ing. en Gestión Empresarial</option>
+                <option value="Ing. Informática">Ing. Informática</option>
+                <option value="Ing. en Logística (PRESENCIAL)">Ing. en Logística (PRESENCIAL)</option>
+                <option value="Ing. en Nanotecnología">Ing. en Nanotecnología</option>
+                <option value="Ing. en Sistemas Computacionales">Ing. en Sistemas Computacionales</option>
+                <option value="Ing. en Tecnologías de la Información y Comunicaciones">Ing. en Tecnologías de la Información y Comunicaciones</option>
+                <option value="Ing. Industrial (PRESENCIAL)">Ing. Industrial (PRESENCIAL)</option>
+                <option value="Ing. Química">Ing. Química</option>
+                <option value="Ing. Mecánica">Ing. Mecánica</option>
+                <option value="Lic. en Administración">Lic. en Administración</option>
+                <option value="Ing. en Logística (SEMI-PRESENCIAL)">Ing. en Logística (SEMI-PRESENCIAL)</option>
+                <option value="Ing. Industrial (SEMI-PRESENCIAL)">Ing. Industrial (SEMI-PRESENCIAL)</option>
+                <option value="Maestría en Administración">Maestría en Administración</option>
+                <option value="Maestría en Ciencias de la Computación">Maestría en Ciencias de la Computación</option>
+                <option value="Maestría en Ciencias en Química">Maestría en Ciencias en Química</option>
+                <option value="Maestría en Ingeniería Industrial">Maestría en Ingeniería Industrial</option>
+                <option value="Maestría en Ingeniería Industrial (Posgrado con la Industria)">Maestría en Ingeniería Industrial (Posgrado con la Industria)</option>
+                <option value="Maestría en Tecnologías de la Información">Maestría en Tecnologías de la Información</option>
+                <option value="Doctorado en Ciencias de la Computación">Doctorado en Ciencias de la Computación</option>
+                <option value="Doctorado en Ciencias de la Ingeniería">Doctorado en Ciencias de la Ingeniería</option>
+                <option value="Doctorado en Ciencias en Química">Doctorado en Ciencias en Química</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Ingrese el semestre que se encuentra cursando actualmente</label>
+            <input type="number" name="semestre" class="form-control" required placeholder="Ej.: 8">
+          </div>
+          
+          <div class="form-group">
+            <label>Indique el turno en el cual se encuentra asistiendo a clase</label><br>
+            <select name="turno" id="turno"class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="MATUTINO">MATUTINO</option>  
+                <option value="VESPERTINO">VESPERTINO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Actualmente, ¿se encuentra cursando algún examen especial?</label><br>
+            <select name="especial" id="especial"class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="SI">SI</option>  
+                <option value="NO">NO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Ingrese el número de créditos que se encuentra cursando en el semestre actual</label>
+            <input type="number" name="NoCreditos" class="form-control" required placeholder="Ej.: 34">
+          </div>
+          <br>
+          <div class="form-group">
+            <label>¿Adeuda materias de semestres anteriores?</label><br>
+            <select name="adeudo" id="adeudo" class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="SI">SI</option>  
+                <option value="NO">NO</option>
+            </select>
+          </div>
+         <div class="form-group">
+            <label>¿Usted trabaja?</label><br>
+            <select name="trabajo" id="trabajo" class="select-css" required>
+              <option disabled selected hidden>Seleccione una opción</option>
+                <option value="SI">SI</option>  
+                <option value="NO">NO</option>
+            </select>
+          </div>
+
+          <div class="form-group text-right">
+            <button type="submit" class="btnSolicitud">Guardar</button>  
+          </div> 
+      </div>
+     </div>
+    </form>
+   
+</div>

@@ -1,0 +1,55 @@
+<%- contentFor('body') %>
+<form action="/veralumno" method="GET"> 
+<img src="https://sites.google.com/a/tectijuana.edu.mx/posgrado-con-la-industria/_/rsrc/1525283248146/config/customLogo.gif?revision=3" 
+alt="Beca Alimenticia Banner" width="100%" height="220px">
+
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2 class="hTitle">Beca Alimenticia</h2>
+        <br>
+        <h3 class="h2home">Datos del alumno</h3>
+        <label>Apellido paterno: <%= wea.paterno %></label><br>
+        <label>Apellido materno: <%= wea.materno %></label><br>
+        <label>Nombre(s): <%= wea.nombres %></label><br>
+        <label>Edad: <%= wea.edad %></label><br>
+        <label>Edo civil: <%= wea.estadocivil %></label><br>
+        <label>Dirección particular: <%= wea.direccion %></label><br>
+        <label>Teléfono: <%= wea.telefono %></label><br>
+        <label>Alguna vez tuvo beca: <%= wea.becaanterior %></label><br>
+        <label>Número de control: <%= wea.nocontrol %></label><br>
+        <label>Carrera: <%= wea.carrera %></label><br>
+        <label>Semestre: <%= wea.semestre %></label><br>
+        <label>Turno: <%= wea.turno %></label><br>
+        <label>Examen especial: <%= wea.examenespecial %></label><br>
+        <label>Créditos: <%= wea.creditos %></label><br>
+        <label>Adeudo: <%= wea.adeudo %></label><br>
+        <label>Trabaja: <%= wea.trabaja %></label><br>
+        <label>Ingreso mensual familiar: <%= wea.ingresomes %></label><br>
+        <label>Vive con: <%= wea.vivecon %></label><br>
+        <label>Cuanto tiempo tienen viviendo ahí: <%= wea.tiempovivienda %></label><br>
+        <label>Cuántos niños y adultos: <%= wea.nopersonas %></label><br>
+        <label>La casa es: <%= wea.casa %></label><br>
+        <label>La casa es de: <%= wea.casamateria %></label><br>
+        <label>No de recamaras: <%= wea.norecamaras %></label><br>
+        <label>Luz: <%= wea.luz %></label><br>
+        <label>Agua: <%= wea.agua %></label><br>
+        <label>Teléfono: <%= wea.tel %></label><br>
+        <label>Internet: <%= wea.internet %></label><br>
+        <label>Drenaje: <%= wea.drenaje %></label><br>
+        <label>Tv: <%= wea.tv %></label><br>
+        <label>No de Automóviles: <%= wea.autos %></label><br>
+        <label>Transporte: <%= wea.transporte %></label><br>
+        <label>Miembros de la famillia: <%= wea.descripFamiliares %></label><br>
+        <label>Promedio: <%= wea.promedio %></label><br>
+        <label>Capacidades diferentes: <%= wea.capacidadesDiferentes %></label><br>
+        <label>Madre o padre soltero(a)/ embarazo: <%= wea.hijo %></label><br>
+        <label>No de hijos: <%= wea.noHijos %></label><br>
+        <label>Equipos de la escuela: <%= wea.equipo %></label><br>
+        <label>Motivos: <%= wea.motivosdeBeca %></label><br>
+        <label>Acepta bases: <%= wea.acuerdo %></label><br>
+        <br><br>
+        <a href="/solicitudes" class="btnSolicitud">Volver</a>
+        </div>
+    </div>
+</div>

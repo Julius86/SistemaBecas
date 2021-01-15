@@ -1,0 +1,30 @@
+<%- contentFor('body') %>
+<form action="/inicioAlumno" method="GET"> 
+<img src="https://sites.google.com/a/tectijuana.edu.mx/posgrado-con-la-industria/_/rsrc/1525283248146/config/customLogo.gif?revision=3" 
+alt="Beca Alimenticia Banner" width="100%" height="220px">
+
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+    <h2 class="hTitle">Beca Alimenticia</h2>
+    <h3 class="h2home">Bienvenido al Sistema de Becas Alimenticias</h3>
+    <p class="p-home">Alumno, recuerda revisar las bases de la beca alimenticia y tener 
+      documentos oficiales a la mano en caso de ser requeridos. 
+      Por favor selecciona "Solicitar Beca" para acceder al formulario. En el caso de 
+      desear consultar el estado de solicitud, selecicona "Ver Solicitud".</p>
+
+      <a class="enlace" href="https://drive.google.com/file/d/1i4OdVkr4ZioSq7fHzo6NVfIeF5JAfUO3/view?usp=sharing">Ver bases de la beca</a>
+    <br><br>
+    <% for (database of data) { %>
+    <% } %>
+    <a href="/personales" class="btnSolicitud">Solicitar beca</a>
+    <a href="/verestado/<%= database._id %>" class=" btnSolicitud">Ver Solicitud</a>
+  </div>
+
+</div>
+</div></form>
+<form action="/login" method="GET"> 
+  <div class="form-group text-right">
+    <br> 
+    <button class="btn btn-info mb-2" id="boton">Cerrar Sesión</button>
+  </div>
