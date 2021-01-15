@@ -16,7 +16,7 @@ app.use(methodOverride('_method'))
 //const mongodbUri =  'mongodb+srv://JulioLop:12345@solicitudesbeca.g8yei.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
 //Settings
-const port = process.env.PORT || 3000;
+//const port = process.env.PORT || 3000;
 
 // Motor de Vistas Handlebars
 app.engine('.hbs', hbs({
@@ -43,11 +43,11 @@ const router = require('./app/routes');
 app.use('/',router);
 
 //start the server
-app.listen(port, function() {
+/*app.listen(port, function() {
     console.log('app started in port 3003');
     });
 
-  // app.listen(3000);
+  // app.listen(3000);*/
 
 //Conexión a BD y levantar Servidor
 mongoose.connect( config.db, config.urlParser, ( err,res ) =>{
